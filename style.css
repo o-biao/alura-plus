@@ -1,0 +1,171 @@
+:root{
+    --texto-principal: #FFFFFF; 
+    --texto-secundario: #C0C0C0 ;
+    --cor-botao: #167DF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: arial;
+    --cor-botao-efeito: #22edf4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--texto-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.principal{
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    margin: 0 6em;
+}
+
+.container__titulo{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.container__botao{
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--texto-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+
+.botao_secundario{
+    background-color: transparent;
+    border: 1px solid var(--texto-principal);
+}
+
+.container__aviso{
+    font-size: 1em;
+    color: var(--texto-secundario);
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 3em;
+    font-family: var(--fonte-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--texto-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos{
+    text-align: center;
+
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 4em 0;
+}
+
+.dispositivos__titulo{
+    font-size: 3em;
+    color: var(--texto-principal);
+
+}
+
+.lista__item{
+    font-size: 2em;
+    color: var(--texto-principal);
+}
+
+.rodape{    
+    margin-top: 9em;
+    text-align: center;
+    color: var(--texto-secundario);
+}
+
+.rodape__logo{
+    margin-bottom: 3em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.lista__link{
+    padding: 0 1em;
+    list-style-type: none;
+}
+
+.rodape_links{
+    text-decoration: none;
+    color: var(--texto-principal);
+}
+
+.rodape__texto{
+    padding: 1em 25em;
+    font-size: 0.8em;
+}
+
+.texto_dois{
+    margin-bottom: 5em;
+}
+
+.rodape_links:hover{
+    color: var(--cor-botao);
+}
+
+.rodape_links:active{
+    color: aqua;
+}
+
+.container__botao:hover{
+    color: var(--cor-botao-efeito);
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
